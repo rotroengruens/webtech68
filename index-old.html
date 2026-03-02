@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leaf & Bean Café</title>
-    <!--<link rel="stylesheet" href="css/style.css">-->
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-    <h1>🍃 Leaf & Bean Café</h1>
-    <nav>
+    <header class="site-header" id="top">
+    <h1 class="logo">🍃 Leaf & Bean Café</h1>
+    <nav class="main-nav">
         <a href="#menu">เมนู</a>
         <a href="#about">เกี่ยวกับเรา</a>
         <a href="#contact">ติดต่อ</a>
@@ -20,54 +20,43 @@
 
     <main>
     <!-- ส่วน Hero -->
-    <section>
+    <section class="hero-section">
         <h2>กาแฟดี ๆ เริ่มต้นที่นี่</h2>
         <p>คัดสรรเมล็ดกาแฟคุณภาพจากดอยสูง ชงสดใหม่ทุกแก้ว</p>
     </section>
-    <div class="container">
-        <div class="row">
-            <div class="col-4">คอลัมน์ 1 (4/12)</div>
-            <div class="col-4">คอลัมน์ 2 (4/12)</div>
-            <div class="col-4">คอลัมน์ 3 (4/12)</div>
-        </div>
-    </div>
+
     <!-- ส่วนเมนู -->
     <section id="menu">
-        <h2>เมนูแนะนำ</h2>
-        <div class="container">
-            <div class="row">
+        <h2 class="section-title">เมนูแนะนำ</h2>
         <!-- จะเพิ่มการ์ดเมนูใน Section 2 -->
          <!-- div ครอบเมนูทั้งหมด — เตรียมจัดเป็น Grid ใน CSS -->
-    <div>
+    <div class="menu-grid">
     <!-- การ์ดเมนูที่ 1 -->
-    <div class="col-4">
-        <h3>☕ Espresso</h3>
-        <p>เข้มข้น หอมกรุ่น คั่วกลางจากดอยช้าง</p>
-        <span>ราคา: <span>฿55</span></p>
-        </div>
+    <div class="card">
+        <h3 class="card-title">☕ Espresso</h3>
+        <p class="card-desc">เข้มข้น หอมกรุ่น คั่วกลางจากดอยช้าง</p>
+        <span class="price">ราคา: <span>฿55</span></p>
     </div>
     <!-- การ์ดที่ 2 -->
-    <div class="col-4">
-        <h3>🍵 Matcha Latte <span>BEST SELLER</span></h3>
-        <p>ชาเขียวเกรดพรีเมียมจากอุจิ</p>
-        <span>฿75</p>
-        <span>BEST SELLER</span>
-        </div>
+    <div class="card featured">
+        <h3 class="card-title">🍵 Matcha Latte <span>BEST SELLER</span></h3>
+        <p class="card-desc">ชาเขียวเกรดพรีเมียมจากอุจิ</p>
+        <span class="price">฿75</p>
+        <span class="badge bestseller">BEST SELLER</span>
     </div>
     <!-- การ์ดที่ 3 -->
-    <div class="col-4">
-        <h3>🧊 Cold Brew</h3>
-        <p>สกัดเย็น 18 ชั่วโมง นุ่มลึก</p>
-        <span>฿65</p>
-        <span>NEW</span>
-        </div>
+    <div class="card">
+        <h3 class="card-title">🧊 Cold Brew</h3>
+        <p class="card-desc">สกัดเย็น 18 ชั่วโมง นุ่มลึก</p>
+        <span class="price">฿65</p>
+        <span class="badge new">NEW</span>
     </div>
 </div>
     </section>
 
-<div><!-- เรื่องราวร้าน — เนื้อหาอิสระ ใช้ <article> -->
+<div class="content-wrapper"><!-- เรื่องราวร้าน — เนื้อหาอิสระ ใช้ <article> -->
     <article id="about">
-        <h2>เรื่องราวของเรา</h2>
+        <h2 class="section-title">เรื่องราวของเรา</h2>
         <p>Leaf & Bean Café เกิดจากความรักในกาแฟ...</p>
         <figure>
             <img src="cafe-interior.jpg" alt="บรรยากาศภายในร้าน">
@@ -75,7 +64,7 @@
         </figure>
     </article>
     
-    <aside>
+    <aside class="sidebar">
         <h3>🕐 เวลาเปิด-ปิด</h3>
         <p>จันทร์ - ศุกร์: 7:00 - 20:00</p>
         <p>เสาร์ - อาทิตย์: 8:00 - 21:00</p>
@@ -84,7 +73,7 @@
 </div>
 </main>
 
-<footer>
+<footer class="site-footer" id="contract">
     <p>&copy; 2026 Leaf & Bean Café</p>
     <p>📍 ม.ศิลปากร วิทยาเขตสนามจันทร์ จ.นครปฐม</p>
 </footer>
