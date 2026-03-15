@@ -1,0 +1,38 @@
+body{
+    font-family: Arial;
+    background-color:#f0f7f0;
+}
+
+.container{
+    text-align:center;
+}
+
+.member h1{
+    color:#287a4c;
+}
+
+.member h2{
+    color:#287a4c;
+}
+
+/* menu */
+
+nav{
+    background:#dff5e1;
+    text-align:center;
+    padding:10px;
+}
+
+nav a{
+    margin:15px;
+    text-decoration:none;
+    color:#2e8b57;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:white;
+    background-color:#228B22;
+    padding:5px 8px;
+    border-radius:5px;
+}
