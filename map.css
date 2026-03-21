@@ -1,0 +1,93 @@
+
+body{
+    font-family: Arial;
+    background-color:#f0f7f0;
+}
+
+.container{
+    text-align:center;
+}
+
+
+nav{
+background:#dff5e1;
+text-align:center;
+padding:10px;
+}
+
+nav ul{
+list-style:none;
+}
+
+nav ul li{
+display:inline;
+}
+
+nav a{
+margin:15px;
+text-decoration:none;
+color:#2e8b57;
+font-weight:bold;
+}
+
+nav a:hover{
+color:white;
+background-color:#228B22;
+padding:5px 8px;
+border-radius:5px;
+}
+
+.map img{
+    border-radius: 50px;
+}
+
+.map p{
+    color:#2e8b57;
+    font-weight:bold;
+}
+footer{
+    background:#2e8b57;
+    color:white;
+    text-align:center;
+    padding:10px;
+    margin-top:100px;
+}
+/* layout การ์ด */
+.map{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ตัวการ์ด */
+.card{
+    background: white;
+    width: 80%;              
+    max-width: 900px;        
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    text-align: center;
+    transition: 0.3s;
+}
+
+/* hover แล้วเด้ง */
+.card:hover{
+    transform: translateY(-5px);
+}
+
+/* รูปในการ์ด */
+.card img{
+    width: 100%;
+    height: auto;     
+    object-fit: contain;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+/* ข้อความ */
+.card p{
+    font-size: 22px;       
+    color: #2e8b57;
+    font-weight: bold;
+}
